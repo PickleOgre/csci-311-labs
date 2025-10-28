@@ -1,20 +1,26 @@
 // CSCI 311 - Spring 2023
 // Lab 6 - Hash Table cpp
-// Author: Carter Tillquist
+// Author: Josiah Lawrence
 
 #include <iostream>
 #include <math.h>
 #include "HashTable.h"
 
 HashTable::HashTable(){
+  size = 11;
+  p = 31;
+  numElements = 0;
 }
 
 HashTable::HashTable(int s, int mult){
+  size = s;
+  p = mult;
+  numElements;
 }
 
-int HashTable::getSize(){ return -1; }
-int HashTable::getNumElements(){ return -1; }
-int HashTable::getP(){ return -1; }
+int HashTable::getSize(){ return size; }
+int HashTable::getNumElements(){ return numElements; }
+int HashTable::getP(){ return p; }
 
 void HashTable::printTable(){
   std::cout << "HASH TABLE CONTENTS" << std::endl;
